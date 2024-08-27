@@ -8,6 +8,20 @@ import projectsData from "../data/projects.json";
 const { projects } = projectsData;
 ---
 
+<style>
+    .section {
+        position: relative;
+    }
+
+    .section::before {
+        content: "";
+        display: block;
+        height: 70px; /* Ajusta este valor según la altura de tu menú */
+        margin-top: -70px; /* Ajusta este valor según la altura de tu menú */
+        visibility: hidden;
+    }
+</style>
+
 <section
     id="projects"
     class="flex flex-col mx-4 md:mx-14 my-4 pb-10 px-2 md:px-0 border-solid border-2 border-black"

@@ -2,26 +2,32 @@
 import Logo from "../assets/logo-2.png";
 ---
 
+<style>
+    /* Estilos para el menú de dispositivos grandes y medianos */
+    .menu-large {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* Asegúrate de que el menú esté encima de otros elementos */
+    }
+</style>
+
 <header class="p-2">
     <!-- Menu de dispositivos grandes y medianos -->
-    <nav class="hidden md:flex justify-center font-lexend">
+    <nav class="hidden md:flex justify-center font-lexend menu-large pt-2">
         <ul
-            class="flex flex-row space-x-9 items-center border-solid border-2 border-black m-6 py-1 px-5 text-lg"
+            class="flex flex-row space-x-9 items-center border-solid border-2 border-black m-6 py-1 px-5 text-lg bg-zinc-50"
         >
             <li>
                 <a href="#">
-                    <img
-                        src={Logo.src}
-                        alt="Cat logo"
-                        width="50"
-                        height="50"
-                    />
+                    <img src={Logo.src} alt="Cat logo" width="50" height="50" />
                 </a>
             </li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -94,11 +100,13 @@ import Logo from "../assets/logo-2.png";
                 </a>
             </div>
             <!-- Enlaces de navegación -->
-            <div class="flex flex-col items-center border-solid border-2 border-black mx-5 p-10">
-                <a href="#" class="text-4xl mb-10">About</a>
-                <a href="#" class="text-4xl mb-10">Projects</a>
-                <a href="#" class="text-4xl mb-10">Skills</a>
-                <a href="#" class="text-4xl">Contact</a>
+            <div
+                class="flex flex-col items-center border-solid border-2 border-black mx-5 p-10"
+            >
+                <a href="#about" class="text-4xl mb-10">About</a>
+                <a href="#projects" class="text-4xl mb-10">Projects</a>
+                <a href="#skills" class="text-4xl mb-10">Skills</a>
+                <a href="#contact" class="text-4xl">Contact</a>
             </div>
 
             <div></div>
@@ -107,15 +115,44 @@ import Logo from "../assets/logo-2.png";
 </header>
 
 <script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const menuClose = document.getElementById("menu-close");
-    const menu = document.getElementById("menu");
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("menu-toggle");
+        const menuClose = document.getElementById("menu-close");
+        const menu = document.getElementById("menu");
 
-    menuToggle?.addEventListener("click", function () {
-        menu?.classList.toggle("hidden");
-    });
+        // Type assertion to handle null values
+        menuToggle?.addEventListener("click", function () {
+            menu?.classList.toggle("hidden");
+        });
 
-    menuClose?.addEventListener("click", function () {
-        menu?.classList.add("hidden");
+        menuClose?.addEventListener("click", function () {
+            menu?.classList.add("hidden");
+        });
+
+        // Script for smooth scrolling with offset
+        const offset = 90; // Adjust this value according to your menu height
+        const links =
+            document.querySelectorAll<HTMLAnchorElement>("a[href^='#']");
+
+        links.forEach((link) => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute("href")?.substring(1); // Gets the target ID without the '#'
+                const targetElement = targetId
+                    ? document.getElementById(targetId)
+                    : null;
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - offset,
+                        behavior: "smooth", // Optional: for smooth scrolling
+                    });
+                    // Cerrar el menú desplegable si está abierto
+                    if (!menu?.classList.contains("hidden")) {
+                        menu?.classList.add("hidden");
+                    }
+                }
+            });
+        });
     });
 </script>
