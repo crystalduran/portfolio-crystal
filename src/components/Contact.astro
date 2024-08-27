@@ -1,0 +1,71 @@
+---
+import contact from "../data/contact.json";
+import GitHub from "../assets/GitHub.png";
+import LinkedIn from "../assets/LinkedIn.png";
+import Devto from "../assets/Dev.png";
+import Instagram from "../assets/instagram-svgrepo-com.svg";
+---
+
+<div class="md:basis-2/6 border-solid border-2 border-black p-10">
+    <div class="flex justify-center mb-2">
+        <h2 class="text-4xl font-indie-flower font-black">Contact</h2>
+    </div>
+
+    <p class="text-lg text-justify font-lexend font-light">
+        {contact.content}
+    </p>
+    <div class="font-lexend font-light text-base py-5 flex flex-col gap-y-5 items-start">
+        <div class="flex flex-row">
+            <svg
+                fill="#000000"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="25"
+                height="25"
+                viewBox="0 0 395.71 395.71"
+                xml:space="preserve"
+            >
+                <g>
+                    <path
+                        d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+		c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+		C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+		c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"
+                    ></path>
+                </g>
+            </svg>
+            <p class="pl-5">{contact.location}</p>
+        </div>
+        <div class="flex flex-row">
+            <svg
+                fill="#000000"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                    d="M22,5V9L12,13,2,9V5A1,1,0,0,1,3,4H21A1,1,0,0,1,22,5ZM2,11.154V19a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V11.154l-10,4Z"
+                ></path></svg
+            >
+            <a href={contact.mail} target="_blank" rel="noopener noreferrer" class="pl-5">{contact.mail}</a>
+        </div>
+        <div class="flex flex-row ">
+            <img src={LinkedIn.src} alt="Logo LinkedIn" width="20" height="20" class="w-auto h-auto max-w-[30px] max-h-[30px]" />
+            <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" class="pl-5">{contact.linkedin}</a>
+        </div>
+        <div class="flex flex-row">
+            <img src={GitHub.src} alt="Logo GitHub" width="30" height="30" />
+            <a href={contact.github} target="_blank" rel="noopener noreferrer" class="pl-5">{contact.github}</a>
+        </div>
+        <div class="flex flex-row">
+            <img src={Devto.src} alt="Logo Devto" width="30" height="30" />
+            <a href={contact.devto} target="_blank" rel="noopener noreferrer" class="pl-5">{contact.devto}</a>
+        </div>
+        <div class="flex flex-row">
+            <img src={Instagram.src} alt="Logo Instagram" width="30" height="30" />
+            <a href={contact.instagram} target="_blank" rel="noopener noreferrer" class="pl-5">{contact.instagram}</a>
+        </div>
+    </div>
+</div>

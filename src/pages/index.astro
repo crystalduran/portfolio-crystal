@@ -1,8 +1,10 @@
 ---
 import About from "../components/About.astro";
+import Contact from "../components/Contact.astro";
 import Hero from "../components/Hero.astro";
 import NavBar from "../components/NavBar.astro";
 import Projects from "../components/Projects.astro";
+
 ---
 
 <html lang="en">
@@ -28,6 +30,9 @@ import Projects from "../components/Projects.astro";
 		<main>
 			<About />
 			<Projects />
+			<div id="about" class="flex flex-col md:flex-row md:space-x-3 mx-4 md:mx-14 my-4">
+				<Contact/>
+			</div>
 		</main>
 	</body>
 </html>
