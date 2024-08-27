@@ -1,0 +1,121 @@
+---
+import Logo from "../assets/logo-2.png";
+---
+
+<header class="p-2">
+    <!-- Menu de dispositivos grandes y medianos -->
+    <nav class="hidden md:flex justify-center font-lexend">
+        <ul
+            class="flex flex-row space-x-9 items-center border-solid border-2 border-black m-6 py-1 px-5 text-lg"
+        >
+            <li>
+                <a href="#">
+                    <img
+                        src={Logo.src}
+                        alt="Logo de gato"
+                        width="50"
+                        height="50"
+                    />
+                </a>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu de dispositivos pequenos -->
+    <header class="md:hidden">
+        <nav class="flex justify-between items-center pt-2 pb-4">
+            <!-- Icono del menú -->
+            <div id="menu-toggle" class="cursor-pointer">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 text-black pl-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </div>
+
+            <!-- Logo en el centro -->
+            <div class="flex justify-center items-center">
+                <a href="#">
+                    <img
+                        src={Logo.src}
+                        alt="Logo de gato"
+                        width="50"
+                        height="50"
+                    />
+                </a>
+            </div>
+
+            <!-- Espacio vacío para balancear la disposición -->
+            <div class="w-8"></div>
+        </nav>
+
+        <!-- Menu desplegable (inicialmente oculto) -->
+        <div
+            id="menu"
+            class="hidden fixed inset-0 flex-col justify-center items-center bg-zinc-100 z-50 font-lexend"
+        >
+            <!-- Botón para cerrar el menú -->
+            <div class="absolute top-4 right-4 cursor-pointer" id="menu-close">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </div>
+            <!-- Logo en el menu de moviles -->
+            <div class="mb-10 mt-5 flex justify-center">
+                <a href="#">
+                    <img
+                        src={Logo.src}
+                        alt="Logo de gato"
+                        width="120"
+                        height="120"
+                    />
+                </a>
+            </div>
+            <!-- Enlaces de navegación -->
+            <div class="flex flex-col items-center border-solid border-2 border-black mx-5 p-10">
+                <a href="#" class="text-4xl mb-10">About</a>
+                <a href="#" class="text-4xl mb-10">Projects</a>
+                <a href="#" class="text-4xl mb-10">Skills</a>
+                <a href="#" class="text-4xl">Contact</a>
+            </div>
+
+            <div></div>
+        </div>
+    </header>
+</header>
+
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuClose = document.getElementById("menu-close");
+    const menu = document.getElementById("menu");
+
+    menuToggle?.addEventListener("click", function () {
+        menu?.classList.toggle("hidden");
+    });
+
+    menuClose?.addEventListener("click", function () {
+        menu?.classList.add("hidden");
+    });
+</script>

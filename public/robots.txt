@@ -1,0 +1,4 @@
+# Hello
+
+User-agent: *
+Allow: /
