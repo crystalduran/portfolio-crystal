@@ -1,0 +1,101 @@
+---
+// Importar el tipo `ImageMetadata` de Astro para manejar imágenes
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+// Definir las propiedades del componente
+interface Props {
+    title: string;
+    year: string;
+    description: string;
+    technologies: {
+        name: string;
+        logo: string;
+        width: number;
+        height: number;
+    }[];
+    projectImage: string;
+    githubLink?: string;
+    liveLink?: string;
+}
+
+// Desestructuración de las propiedades
+const {
+    title,
+    year,
+    description,
+    technologies,
+    projectImage,
+    githubLink,
+    liveLink,
+} = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+    "/src/assets/*.{jpeg,jpg,png,gif}",
+);
+if (!images[projectImage])
+    throw new Error(
+        `"${projectImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
+    );
+---
+
+<div class="grid grid-cols-1 md:grid-rows-3 md:grid-flow-col gap-4 md:gap-x-10 py-10 px-4 md:py-0 md:px-16 font-lexend">
+    <div class="md:col-span-1">
+        <p class="text-lg pb-2">{title} ({year})</p>
+        <p class="text-base md:text-lg text-justify font-light">
+            {description}
+        </p>
+    </div>
+    <div class="md:col-span-1">
+        <div class="flex flex-row flex-wrap justify-start py-2 gap-x-2 md:gap-x-8 max-w-full md:max-w-none mx-auto">
+            {
+                technologies.map((tech) => (
+                    <div class="flex items-center justify-center mb-2 md:mb-0">
+                        <img
+                            src={tech.logo}
+                            alt={`${tech.name} Logo`}
+                            width={tech.width}
+                            height={tech.height}
+                            class="object-contain"
+                        />
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+    <div class="flex flex-col items-end md:row-span-3 md:col-span-2">
+        <Image
+            src={images[projectImage]()}
+            alt=`${title} image`
+            width="500"
+            height="300"
+            class="object-cover border-solid border border-black"
+        />
+        <div class="flex space-x-4 mt-2">
+            {
+                githubLink && (
+                    <a
+                        href={githubLink}
+                        class="text-right underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub repository
+                    </a>
+                )
+            }
+            {
+                liveLink && (
+                    <a
+                        href={liveLink}
+                        class="text-right underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Live site
+                    </a>
+                )
+            }
+        </div>
+    </div>
+</div>

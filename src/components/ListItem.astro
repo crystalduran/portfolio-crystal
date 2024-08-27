@@ -1,0 +1,33 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+
+interface Props {
+    content: string;
+    imagePath: string; 
+    alt: string; 
+}
+
+const { content, imagePath, alt } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
+---
+
+<li class="flex items-start mb-4">
+    <!-- Viñeta como SVG -->
+    <svg
+        class="w-4 h-4 mr-4 mt-2 basis-1/12"
+        fill="black"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <circle cx="10" cy="10" r="8"></circle>
+    </svg>
+    <!-- Contenido del ítem -->
+    <p class="basis-3/4">
+        {content}
+    </p>
+    <div class="ml-5 flex items-center justify-center basis-2/12">
+        <Image src={images[imagePath]()} alt={alt} width="40" height="40" class="rounded object-cover" />
+    </div>
+</li>

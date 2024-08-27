@@ -1,6 +1,8 @@
 ---
+import About from "../components/About.astro";
 import Hero from "../components/Hero.astro";
 import NavBar from "../components/NavBar.astro";
+import Projects from "../components/Projects.astro";
 
 
 ---
@@ -23,9 +25,11 @@ import NavBar from "../components/NavBar.astro";
 		<title>Crystal Durán</title>
 	</head>
 	<body class="bg-zinc-100">
-		<!-- <h1 class="text-6xl font-indie-flower font-black">HOLA</h1>
-		<p class="font-lexend font-medium">Como estamos</p> -->
 		<NavBar/>
 		<Hero/>
+		<main>
+			<About/>
+			<Projects/>
+		</main>
 	</body>
 </html>

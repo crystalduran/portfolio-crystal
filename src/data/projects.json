@@ -1,0 +1,119 @@
+{
+    "projects": [
+        {
+            "title": "NEPESA S.R.L. website",
+            "year": "2024",
+            "description": "A website for a customs agency based in the Dominican Republic, designed to provide a comprehensive overview of the company and its services.",
+            "technologies": [
+                {
+                    "name": "Astro",
+                    "logo": "/src/assets/astro-logo.png",
+                    "width": 70,
+                    "height": 70
+                },
+                {
+                    "name": "TypeScript",
+                    "logo": "/src/assets/ts-logo.png",
+                    "width": 55,
+                    "height": 55
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "logo": "/src/assets/tailwindcss-logo.png",
+                    "width": 70,
+                    "height": 70
+                }
+            ],
+            "projectImage": "/src/assets/nepesa.png",
+            "liveLink": "https://nepesa.vercel.app/"
+        },
+        {
+            "title": "Portfolio Website",
+            "year": "2024",
+            "description": "My personal portfolio, which shows my projects, skills, professional experience and contact info. The website design is minimalistic and I made it thinking as if each section was a manga panel.",
+            "technologies": [
+                {
+                    "name": "Astro",
+                    "logo": "/src/assets/astro-logo.png",
+                    "width": 70,
+                    "height": 70
+                },
+                {
+                    "name": "TypeScript",
+                    "logo": "/src/assets/ts-logo.png",
+                    "width": 55,
+                    "height": 55
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "logo": "/src/assets/tailwindcss-logo.png",
+                    "width": 70,
+                    "height": 70
+                }
+            ],
+            "projectImage": "/src/assets/portfolio.png",
+            "githubLink": "https://github.com/crystalduran/portfolio-crystal"
+        },
+        {
+            "title": "WisSh Group App ",
+            "year": "2024",
+            "description": "Web app designed to simplify organizing birthday gifts within groups of friends or family. Users can sign up, create or join groups, and share personalized wish lists with other members. ",
+            "technologies": [
+                {
+                    "name": "MongoDB",
+                    "logo": "/src/assets/mongodb-logo.png",
+                    "width": 28,
+                    "height": 60
+                },
+                {
+                    "name": "Express",
+                    "logo": "/src/assets/express-logo.png",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "name": "React",
+                    "logo": "/src/assets/react-logo.svg",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "name": "Node.js",
+                    "logo": "/src/assets/nodejs-logo.svg",
+                    "width": 100,
+                    "height": 62
+                }
+            ],
+            "projectImage": "/src/assets/wissh-example.png",
+            "githubLink": "https://github.com/crystalduran/flutter_delegados_app",
+            "liveLink": "https://nepesa.vercel.app/"
+        },
+        {
+            "title": "Derivatives and Integrals Calculator",
+            "year": "2023",
+            "description": "Web page for calculating derivatives and integrals of user-submitted functions. It uses a specialized library for accurate results and identifies invalid functions",
+            "technologies": [
+                {
+                    "name": "Django",
+                    "logo": "/src/assets/django-logo.png",
+                    "width": 70,
+                    "height": 70
+                },
+                {
+                    "name": "Sympy",
+                    "logo": "/src/assets/sympy-logo.png",
+                    "width": 55,
+                    "height": 55
+                },
+                {
+                    "name": "Bootstrap",
+                    "logo": "/src/assets/bootstrap-logo.svg",
+                    "width": 70,
+                    "height": 70
+                }
+            ],
+            "projectImage": "/src/assets/portfolio.png",
+            "githubLink": "https://github.com/crystalduran/django-app-calculo"
+        }
+    ]
+}
