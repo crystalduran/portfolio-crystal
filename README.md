@@ -1,8 +1,11 @@
-# Portfolio: Crystal D
+## Personal Portfolio - Crystal Durán
 
-<h4 align="center">
-:construction: Proyecto en construcción :construction:
-</h4>
+This is my personal portfolio, designed to showcase my work as a frontend developer. The design is minimalist and inspired by manga panels, offering a clear and stylized presentation of information. ⸜(｡˃ ᵕ ˂ )⸝♡
 
-Este proyecto en desarrollo será mi portafolio personal, donde presentaré mi trabajo como desarrolladora frontend. El portafolio estará construido utilizando Astro, TypeScript y Tailwind CSS, y servirá como una muestra de mis habilidades y proyectos. Aquí podrás encontrar información sobre mí, mis habilidades técnicas, y ejemplos de proyectos en los que he trabajado.
+### Technologies 
+
+- **Astro**: For static web site generation.
+- **Tailwind CSS**: For responsive design and styling.
+- **TypeScript**: To ensure more robust and maintainable code.
+- **Vercel**: For deployment and hosting management.
 
