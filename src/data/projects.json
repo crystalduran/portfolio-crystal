@@ -73,7 +73,7 @@
                 },
                 {
                     "name": "Bootstrap",
-                    "logo": "/src/assets/bootstrap-logo.svg",
+                    "logo": "/src/assets/bootstrap-logo.png",
                     "width": 70,
                     "height": 70
                 }
