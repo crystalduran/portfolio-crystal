@@ -1,0 +1,85 @@
+---
+import ButtonSkill from "./ButtonSkill.astro";
+import skills from "../data/skills.json";
+import SkillCard from "./SkillCard.astro";
+---
+
+<section
+    id="skills"
+    class="basis-4/6 border-solid border-2 border-black p-10 my-4 md:my-0"
+>
+    <div class="flex justify-center mb-2">
+        <h2 class="text-4xl font-indie-flower font-black">Skills</h2>
+    </div>
+
+    <div class="py-5 flex flex-col md:flex-row flex-wrap gap-y-1 md:gap-x-3">
+        <ButtonSkill name="languages" />
+        <ButtonSkill name="frameworks" />
+        <ButtonSkill name="libraries" />
+        <ButtonSkill name="databases" />
+        <ButtonSkill name="tools" />
+    </div>
+
+    <!-- Languages -->
+    <div id="languages-list" class="grid grid-cols-2 gap-2 font-lexend">
+        {skills.languages.map((skill) => (
+            <SkillCard name={skill.name} level={skill.level} imagePath={skill.image} alt={`${skill.name} Logo`} />
+        ))}
+    </div>
+
+    <!-- Frameworks -->
+    <div id="frameworks-list" class="grid grid-cols-2 gap-2 font-lexend hidden">
+        {skills.frameworks.map((skill) => (
+            <SkillCard name={skill.name} level={skill.level} imagePath={skill.image} alt={`${skill.name} Logo`} />
+        ))}
+    </div>
+
+    <!-- Libraries -->
+    <div id="libraries-list" class="grid grid-cols-2 gap-2 font-lexend hidden">
+        {skills.libraries.map((skill) => (
+            <SkillCard name={skill.name} level={skill.level} imagePath={skill.image} alt={`${skill.name} Logo`} />
+        ))}
+    </div>
+
+    <!-- Databases -->
+    <div id="databases-list" class="grid grid-cols-2 gap-2 font-lexend hidden">
+        {skills.databases.map((skill) => (
+            <SkillCard name={skill.name} level={skill.level} imagePath={skill.image} alt={`${skill.name} Logo`} />
+        ))}
+    </div>
+
+    <!-- Tools -->
+    <div id="tools-list" class="grid grid-cols-2 gap-2 font-lexend hidden">
+        {skills.tools.map((skill) => (
+            <SkillCard name={skill.name} level={skill.level} imagePath={skill.image} alt={`${skill.name} Logo`} />
+        ))}
+    </div>
+</section>
+
+<!-- Client-side script to handle tab visibility -->
+<script type="module">
+    // Function to update the visibility of skill sections
+    function updateSkills(name) {
+        // Get all skill sections
+        const skillDivs = document.querySelectorAll('#skills > div[id$="-list"]');
+        // Hide all sections
+        skillDivs.forEach(div => div.classList.add('hidden'));
+        
+        // Show the selected section
+        const targetDiv = document.getElementById(`${name}-list`);
+        if (targetDiv) {
+            targetDiv.classList.remove('hidden');
+        }
+    }
+
+    // Show the default section (languages) on page load
+    document.addEventListener('DOMContentLoaded', () => updateSkills('languages'));
+
+    // Attach event listeners to buttons
+    document.querySelectorAll('button[id$="-button"]').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const name = event.target.id.replace('-button', '');
+            updateSkills(name);
+        });
+    });
+</script>

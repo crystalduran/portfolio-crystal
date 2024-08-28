@@ -1,0 +1,17 @@
+---
+interface Props {
+    name: string;
+}
+
+const { name } = Astro.props;
+const displayName = name.charAt(0).toUpperCase() + name.slice(1); // Capitalize the first letter
+const buttonId = `${name}-button`;
+---
+
+<button
+    id={buttonId}
+    class="border-solid border-2 border-black font-lexend text-xl py-2 px-4 flex-1 hover:bg-black hover:text-white hover:border-black"
+    onclick={`updateSkills('${name}')`}
+>
+    {displayName}
+</button>

@@ -1,0 +1,152 @@
+{
+  "languages": [
+    {
+      "name": "JavaScript",
+      "level": "Advanced",
+      "image": "/src/assets/JavaScript-logo.png"
+    },
+    {
+      "name": "TypeScript",
+      "level": "Intermediate",
+      "image": "/src/assets/ts-logo.png"
+    },
+    {
+      "name": "HTML",
+      "level": "Advanced",
+      "image": "/src/assets/html-logo.png"
+    },
+    {
+      "name": "CSS",
+      "level": "Advanced",
+      "image": "/src/assets/css-logo.png"
+    },
+    {
+      "name": "Python",
+      "level": "Intermediate",
+      "image": "/src/assets/python-logo.png"
+    },
+    {
+      "name": "C#",
+      "level": "Beginner",
+      "image": "/src/assets/csharp-logo.png"
+    },
+    {
+      "name": "C++",
+      "level": "Beginner",
+      "image": "/src/assets/cpp-logo.png"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Astro",
+      "level": "Advanced",
+      "image": "/src/assets/astro-logo.png"
+    },
+    {
+      "name": "Flutter",
+      "level": "Intermediate",
+      "image": "/src/assets/flutter-logo.png"
+    },
+    {
+      "name": "Express",
+      "level": "Intermediate",
+      "image": "/src/assets/express-logo.png"
+    },
+    {
+      "name": "React Native",
+      "level": "Intermediate",
+      "image": "/src/assets/react-logo.png"
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": "Advanced",
+      "image": "/src/assets/tailwindcss-logo.png"
+    },
+    {
+      "name": "Bootstrap",
+      "level": "Intermediate",
+      "image": "/src/assets/bootstrap-logo.png"
+    },
+    {
+      "name": "Django",
+      "level": "Beginner",
+      "image": "/src/assets/django-logo.png"
+    },
+    {
+      "name": ".NET",
+      "level": "Beginner",
+      "image": "/src/assets/net-logo.png"
+    }
+  ],
+  "libraries": [
+    {
+      "name": "React",
+      "level": "Intermediate ",
+      "image": "/src/assets/react-logo.png"
+    },
+    {
+      "name": "daisyUI",
+      "level": "Advanced",
+      "image": "/src/assets/daisyui-logo.png"
+    },
+    {
+      "name": "axios",
+      "level": "Beginner",
+      "image": "/src/assets/axios-logo.png"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Git",
+      "level": "Intermediate ",
+      "image": "/src/assets/git-logo.png"
+    },
+    {
+      "name": "GitHub",
+      "level": "Intermediate",
+      "image": "/src/assets/github-logo.png"
+    },
+    {
+      "name": "Node.js",
+      "level": "Intermediate",
+      "image": "/src/assets/nodejs-logo.png"
+    },
+    {
+      "name": "Azure DevOps",
+      "level": "Intermediate",
+      "image": "/src/assets/devops-logo.png"
+    },
+    {
+      "name": "Figma",
+      "level": "Beginner",
+      "image": "/src/assets/figma-logo.png"
+    },
+    {
+      "name": "Selenium",
+      "level": "Beginner",
+      "image": "/src/assets/selenium-logo.png"
+    }
+  ],
+  "databases": [
+    {
+      "name": "Microsoft SQL Server",
+      "level": "Advanced",
+      "image": "/src/assets/sqlserver-logo.png"
+    },
+    {
+      "name": "MySQL",
+      "level": "Intermediate",
+      "image": "/src/assets/mysql-logo.png"
+    },
+    {
+      "name": "MongoDB",
+      "level": "Intermediate",
+      "image": "/src/assets/mongodb2-logo.png"
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Beginner",
+      "image": "/src/assets/postgresql-logo.png"
+    }
+  ]
+}
