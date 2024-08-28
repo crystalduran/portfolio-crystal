@@ -55,40 +55,6 @@
             "githubLink": "https://github.com/crystalduran/portfolio-crystal"
         },
         {
-            "title": "WisSh Group App ",
-            "year": "2024",
-            "description": "Web app designed to simplify organizing birthday gifts within groups of friends or family. Users can sign up, create or join groups, and share personalized wish lists with other members. ",
-            "technologies": [
-                {
-                    "name": "MongoDB",
-                    "logo": "/src/assets/mongodb-logo.png",
-                    "width": 28,
-                    "height": 60
-                },
-                {
-                    "name": "Express",
-                    "logo": "/src/assets/express-logo.png",
-                    "width": 60,
-                    "height": 60
-                },
-                {
-                    "name": "React",
-                    "logo": "/src/assets/react-logo.svg",
-                    "width": 60,
-                    "height": 60
-                },
-                {
-                    "name": "Node.js",
-                    "logo": "/src/assets/nodejs-logo.svg",
-                    "width": 100,
-                    "height": 62
-                }
-            ],
-            "projectImage": "/src/assets/wissh-example.png",
-            "githubLink": "https://github.com/crystalduran/flutter_delegados_app",
-            "liveLink": "https://nepesa.vercel.app/"
-        },
-        {
             "title": "Derivatives and Integrals Calculator",
             "year": "2023",
             "description": "Web page for calculating derivatives and integrals of user-submitted functions. It uses a specialized library for accurate results and identifies invalid functions",
@@ -112,8 +78,41 @@
                     "height": 70
                 }
             ],
-            "projectImage": "/src/assets/portfolio.png",
+            "projectImage": "/src/assets/calculadora.png",
             "githubLink": "https://github.com/crystalduran/django-app-calculo"
+        },
+        {
+            "title": "Civil Defense RD",
+            "year": "2024",
+            "description": "I designed the interface for a mobile application for Defensa Civil RD (unofficial) in a group project, the app was designed to improve emergency response in the Dominican Republic. ",
+            "technologies": [
+                {
+                    "name": "React Native",
+                    "logo": "/src/assets/react-logo.png",
+                    "width": 70,
+                    "height": 70
+                },
+                {
+                    "name": "Expo",
+                    "logo": "/src/assets/expo-logo.png",
+                    "width": 55,
+                    "height": 55
+                },
+                {
+                    "name": "JavaScript",
+                    "logo": "/src/assets/JavaScript-logo.png",
+                    "width": 70,
+                    "height": 70
+                },
+                {
+                    "name": "Axios",
+                    "logo": "/src/assets/axios-logo.png",
+                    "width": 70,
+                    "height": 70
+                }
+            ],
+            "projectImage": "/src/assets/defensa-civil.png",
+            "githubLink": "https://github.com/20220005/AppDefensaCivil"
         }
     ]
 }
