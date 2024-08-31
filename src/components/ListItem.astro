@@ -8,13 +8,18 @@ interface Props {
     alt: string; 
 }
 
+// Access received props
 const { content, imagePath, alt } = Astro.props;
+
+// import.meta.glob returns an object with all the image paths within the src/assets directory that match the specified extensions
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+
+// Check if the specified image exists and throw an error if an invalid file path is passed as a prop
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
 ---
 
 <li class="flex items-start mb-4">
-    <!-- Viñeta como SVG -->
+    <!-- Bullet as SVG -->
     <svg
         class="w-4 h-4 mr-4 mt-2 basis-1/12"
         fill="black"
@@ -23,7 +28,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
     >
         <circle cx="10" cy="10" r="8"></circle>
     </svg>
-    <!-- Contenido del ítem -->
+    <!-- Item content -->
     <p class="basis-3/4">
         {content}
     </p>

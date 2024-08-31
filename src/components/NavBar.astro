@@ -3,18 +3,18 @@ import Logo from "../assets/logo-2.png";
 ---
 
 <style>
-    /* Estilos para el menú de dispositivos grandes y medianos */
+    /* Styles for the menu on medium and large devices */
     .menu-large {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 1000; /* Asegúrate de que el menú esté encima de otros elementos */
+        z-index: 1000; 
     }
 </style>
 
 <header class="p-2">
-    <!-- Menu de dispositivos grandes y medianos -->
+    <!-- Menu for medium and large devices -->
     <nav class="hidden md:flex justify-center font-lexend menu-large pt-2">
         <ul
             class="flex flex-row space-x-9 items-center border-solid border-2 border-black m-6 py-1 px-5 text-lg bg-zinc-50"
@@ -31,10 +31,10 @@ import Logo from "../assets/logo-2.png";
         </ul>
     </nav>
 
-    <!-- Menu de dispositivos pequenos -->
+    <!-- Menu for small devices -->
     <header class="md:hidden">
         <nav class="flex justify-between items-center pt-2 pb-4">
-            <!-- Icono del menú -->
+            <!-- Menu icon -->
             <div id="menu-toggle" class="cursor-pointer">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ import Logo from "../assets/logo-2.png";
                 </svg>
             </div>
 
-            <!-- Logo en el centro -->
+            <!-- Logo in the middle -->
             <div class="flex justify-center items-center">
                 <a href="#">
                     <img
@@ -63,16 +63,16 @@ import Logo from "../assets/logo-2.png";
                 </a>
             </div>
 
-            <!-- Espacio vacío para balancear la disposición -->
+            <!-- Empty space to balance the layout -->
             <div class="w-8"></div>
         </nav>
 
-        <!-- Menu desplegable (inicialmente oculto) -->
+        <!-- Modal menu -->
         <div
             id="menu"
             class="hidden fixed inset-0 flex-col justify-center items-center bg-zinc-100 z-50 font-lexend"
         >
-            <!-- Botón para cerrar el menú -->
+            <!-- Button to close the menu -->
             <div class="absolute top-4 right-4 cursor-pointer" id="menu-close">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ import Logo from "../assets/logo-2.png";
                         d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </div>
-            <!-- Logo en el menu de moviles -->
+            <!-- Logo on mobile menu -->
             <div class="mb-10 mt-5 flex justify-center">
                 <a href="#">
                     <img
@@ -99,7 +99,7 @@ import Logo from "../assets/logo-2.png";
                     />
                 </a>
             </div>
-            <!-- Enlaces de navegación -->
+            <!-- Navigation links -->
             <div
                 class="flex flex-col items-center border-solid border-2 border-black mx-5 p-10"
             >
@@ -108,8 +108,6 @@ import Logo from "../assets/logo-2.png";
                 <a href="#skills" class="text-4xl mb-10">Skills</a>
                 <a href="#contact" class="text-4xl">Contact</a>
             </div>
-
-            <div></div>
         </div>
     </header>
 </header>
@@ -120,7 +118,6 @@ import Logo from "../assets/logo-2.png";
         const menuClose = document.getElementById("menu-close");
         const menu = document.getElementById("menu");
 
-        // Type assertion to handle null values
         menuToggle?.addEventListener("click", function () {
             menu?.classList.toggle("hidden");
         });
@@ -130,7 +127,7 @@ import Logo from "../assets/logo-2.png";
         });
 
         // Script for smooth scrolling with offset
-        const offset = 90; // Adjust this value according to your menu height
+        const offset = 90; // Value set according to the height of the menu
         const links =
             document.querySelectorAll<HTMLAnchorElement>("a[href^='#']");
 
@@ -143,11 +140,12 @@ import Logo from "../assets/logo-2.png";
                     : null;
 
                 if (targetElement) {
+                    // Scroll to the target element with a smooth animation, adjusted for the menu height
                     window.scrollTo({
                         top: targetElement.offsetTop - offset,
-                        behavior: "smooth", // Optional: for smooth scrolling
+                        behavior: "smooth", 
                     });
-                    // Cerrar el menú desplegable si está abierto
+                    // Close the mobile menu if it is open
                     if (!menu?.classList.contains("hidden")) {
                         menu?.classList.add("hidden");
                     }

@@ -1,9 +1,7 @@
 ---
-// Importar el tipo `ImageMetadata` de Astro para manejar imágenes
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
-// Definir las propiedades del componente
 interface Props {
     title: string;
     year: string;
@@ -19,7 +17,6 @@ interface Props {
     liveLink?: string;
 }
 
-// Desestructuración de las propiedades
 const {
     title,
     year,
@@ -30,15 +27,18 @@ const {
     liveLink,
 } = Astro.props;
 
+// import.meta.glob returns an object with all the image paths within the src/assets directory that match the specified extensions
 const images = import.meta.glob<{ default: ImageMetadata }>(
     "/src/assets/*.{jpeg,jpg,png,gif}",
 );
+
+// Check if the specified image exists and throw an error if an invalid file path is passed as a prop
 if (!images[projectImage])
     throw new Error(
         `"${projectImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
     );
 
-// Verificar que las imágenes de las tecnologías existan
+// Map each technology to its corresponding image metadata, throwing an error if the image does not exist
 const techImages = technologies.map((tech) => {
     if (!images[tech.logo])
         throw new Error(
