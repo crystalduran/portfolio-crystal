@@ -1,0 +1,36 @@
+---
+import Footer from "../components/Footer.astro";
+import CatPhoto from "../assets/Cat-512x512.png";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lexend:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>404 Page not found!</title>
+    </head>
+    <body class="bg-zinc-50 md:pt-[50px]"> 
+        <main class="border-solid border-2 border-black mx-4 md:mx-14 md:my-2 px-10 py-16">
+            <section class="flex flex-col md:flex-row md:space-x-12">
+                <div class="flex flex-col justify-center gap-y-5 md:mr-10">
+                    <h1 class="font-indie-flower text-7xl font-black">404</h1>
+                    <h2 class="font-indie-flower text-4xl">Page not found</h2>
+                    <p class="font-lexend">We can't find this page, but the cat always finds its way home. Shall we go back?</p>
+                    <a href="/" class="box-border w-44 border-solid border-2 border-black font-lexend text-xl py-2 px-4 hover:bg-black hover:text-white hover:border-black">Back to Home</a>
+                </div>
+                <div>
+                    <img src={CatPhoto.src} alt="Cat in a heart" width="400" height="400">
+                </div>
+            </section>
+        </main>
+        <Footer/>
+    </body>
+</html>
