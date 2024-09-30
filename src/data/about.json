@@ -25,9 +25,12 @@
     ],
     "certifications": [
         {
-            "content": "CertiProf, Scrum Foundation Professional Certificacion. Nov 2023.",
-            "image": "/src/assets/Asia.png",
-            "alt": "Globe"
+            "image": "/src/assets/sfpc.png",
+            "alt": "CertiProf, Scrum Foundation Professional Certificacion. Nov 2023."
+        },
+        {
+            "image": "/src/assets/javascript-essentials-1.png",
+            "alt": "CertiProf, Scrum Foundation Professional Certificacion. Nov 2023."
         }
     ]
 }

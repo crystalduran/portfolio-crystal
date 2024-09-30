@@ -2,71 +2,64 @@
 import AboutPhoto from "../assets/crystal-bnw.png";
 import about from "../data/about.json";
 import ListItem from "./ListItem.astro";
+import { Image } from "astro:assets";
 
 const { education, experience, certifications } = about;
 ---
 
-<section id="about" class="flex flex-col lg:flex-row lg:space-x-3 mx-4 md:mx-14 lg:mx-14 lg:my-4 mt-4 mb-2">
+<section
+    id="about"
+    class="flex flex-col lg:flex-row lg:space-x-3 mx-4 md:mx-14 lg:mx-14 lg:my-4 mt-4 mb-2"
+>
     <div class="basis-4/6 border-solid border-2 border-black p-10">
         <div class="flex justify-center mb-2">
             <h2 class="text-4xl font-indie-flower font-black">About</h2>
         </div>
 
-        <p class="text-lg text-justify font-lexend font-light">
+        <p class="text-base text-justify font-lexend font-light text-gray-950">
             I enjoy designing and building interactive and attractive visual
             experiences, for web and mobile applications. I grew up in the
             Dominican Republic, where I found my love for programming during my
             school years.
         </p>
 
-        <div class="mt-10">
-            <p class="font-indie-flower font-black text-3xl pb-5">Education</p>
-            <ul class="font-lexend font-light text-lg">
-                {
-                    education.map((item) => (
-                        <ListItem
-                            content={item.content}
-                            imagePath={item.image}
-                            alt={item.alt}
-                        />
-                    ))
-                }
-            </ul>
-        </div>
-        <div class="mt-10">
+        <div id="work-experience" class="mt-10">
             <p class="font-indie-flower font-black text-3xl pb-5">
                 Work Experience
             </p>
-            <ul class="font-lexend font-light text-lg space-y-9">
-                {
-                    experience.map((item) => (
-                        <ListItem
-                            content={item.content}
-                            imagePath={item.image}
-                            alt={item.alt}
-                        />
-                    ))
-                }
+            <ul class="font-lexend font-light text-base space-y-9 text-gray-950">
+                {experience.map((item) => <ListItem content={item.content} />)}
             </ul>
         </div>
-        <div class="mt-10">
-            <p class="font-indie-flower font-black text-3xl pb-5">
-                Certifications
-            </p>
-            <ul class="font-lexend font-light text-lg space-y-9">
-                {
-                    certifications.map((item) => (
-                        <ListItem
-                            content={item.content}
-                            imagePath={item.image}
-                            alt={item.alt}
-                        />
-                    ))
-                }
+
+        <div id="education" class="mt-10">
+            <p class="font-indie-flower font-black text-3xl pb-5">Education</p>
+            <ul class="font-lexend font-light text-base text-gray-950">
+                {education.map((item) => <ListItem content={item.content} />)}
             </ul>
+        </div>
+        <div class="my-10 ml-5 flex gap-x-8">
+            {
+                certifications.map((item) => (
+                    <Image
+                        src={item.image}
+                        alt={item.alt}
+                        width="80"
+                        height="80"
+                    />
+                ))
+            }
         </div>
     </div>
-    <div class="mt-4 mb-2 lg:my-0 lg:basis-2/6 border-solid border-2 border-black">
-        <img src={AboutPhoto.src} alt="Crystal Duran in cap and gown" width="200" height="200"class="w-full h-full object-cover"/>
+    <div
+        class="mt-4 mb-2 lg:my-0 lg:basis-2/6 border-solid border-2 border-black"
+    >
+        <img
+            src={AboutPhoto.src}
+            alt="Crystal Duran in cap and gown"
+            width="200"
+            height="200"
+            class="w-full h-full object-cover"
+        />
     </div>
 </section>
