@@ -1,6 +1,34 @@
 {
     "projects": [
         {
+            "title": "Anime Collection",
+            "year": "2024",
+            "description": "A website that showcases my favorite anime, with details fetched from an API and a profile selection similar to those of streaming platforms.",
+            "technologies": [
+                {
+                    "name": "React",
+                    "logo": "/src/assets/react-logo.png",
+                    "width": 50,
+                    "height": 50
+                },
+                {
+                    "name": "TypeScript",
+                    "logo": "/src/assets/ts-logo.png",
+                    "width": 45,
+                    "height": 45
+                },
+                {
+                    "name": "Vite",
+                    "logo": "/src/assets/vite.png",
+                    "width": 50,
+                    "height": 50
+                }
+            ],
+            "projectImage": "/src/assets/crystal-react-anime-2.png",
+            "githubLink": "https://github.com/crystalduran/react-anime-crystal",
+            "liveLink": "https://react-anime-crystal.vercel.app/"
+        },
+        {
             "title": "NEPESA S.R.L. website",
             "year": "2024",
             "description": "A website for a customs agency based in the Dominican Republic, designed to provide a comprehensive overview of the company and its services.",
@@ -8,23 +36,23 @@
                 {
                     "name": "Astro",
                     "logo": "/src/assets/astro-logo.png",
-                    "width": 70,
-                    "height": 70
+                    "width": 50,
+                    "height": 50
                 },
                 {
                     "name": "TypeScript",
                     "logo": "/src/assets/ts-logo.png",
-                    "width": 55,
-                    "height": 55
+                    "width": 45,
+                    "height": 45
                 },
                 {
                     "name": "Tailwind CSS",
                     "logo": "/src/assets/tailwindcss-logo.png",
-                    "width": 70,
-                    "height": 70
+                    "width": 50,
+                    "height": 50
                 }
             ],
-            "projectImage": "/src/assets/nepesa.png",
+            "projectImage": "/src/assets/nepesa-project.png",
             "liveLink": "https://nepesa.vercel.app/"
         },
         {
@@ -35,23 +63,23 @@
                 {
                     "name": "Astro",
                     "logo": "/src/assets/astro-logo.png",
-                    "width": 70,
-                    "height": 70
+                    "width": 50,
+                    "height": 50
                 },
                 {
                     "name": "TypeScript",
                     "logo": "/src/assets/ts-logo.png",
-                    "width": 55,
-                    "height": 55
+                    "width": 45,
+                    "height": 45
                 },
                 {
                     "name": "Tailwind CSS",
                     "logo": "/src/assets/tailwindcss-logo.png",
-                    "width": 70,
-                    "height": 70
+                    "width": 50,
+                    "height": 50
                 }
             ],
-            "projectImage": "/src/assets/portfolio.png",
+            "projectImage": "/src/assets/portfolio-project.png",
             "githubLink": "https://github.com/crystalduran/portfolio-crystal"
         },
         {
@@ -62,8 +90,8 @@
                 {
                     "name": "React Native",
                     "logo": "/src/assets/react-logo.png",
-                    "width": 70,
-                    "height": 70
+                    "width": 50,
+                    "height": 50
                 },
                 {
                     "name": "Expo",
@@ -74,8 +102,8 @@
                 {
                     "name": "JavaScript",
                     "logo": "/src/assets/JavaScript-logo.png",
-                    "width": 70,
-                    "height": 70
+                    "width": 45,
+                    "height": 45
                 },
                 {
                     "name": "Axios",
@@ -88,34 +116,6 @@
             "githubLink": "https://github.com/20220005/AppDefensaCivil"
         },
         {
-            "title": "Anime Collection",
-            "year": "2024",
-            "description": "A website that showcases my favorite anime, with details fetched from an API and a profile selection similar to those of streaming platforms.",
-            "technologies": [
-                {
-                    "name": "React",
-                    "logo": "/src/assets/react-logo.png",
-                    "width": 70,
-                    "height": 70
-                },
-                {
-                    "name": "TypeScript",
-                    "logo": "/src/assets/ts-logo.png",
-                    "width": 70,
-                    "height": 70
-                },
-                {
-                    "name": "Vite",
-                    "logo": "/src/assets/vite.png",
-                    "width": 70,
-                    "height": 70
-                }
-            ],
-            "projectImage": "/src/assets/crystal-react-anime-2.png",
-            "githubLink": "https://github.com/crystalduran/react-anime-crystal",
-            "liveLink": "https://react-anime-crystal.vercel.app/"
-        },
-        {
             "title": "Derivatives and Integrals Calculator",
             "year": "2023",
             "description": "Web page for calculating derivatives and integrals of user-submitted functions. It uses a specialized library for accurate results and identifies invalid functions",
@@ -123,20 +123,20 @@
                 {
                     "name": "Django",
                     "logo": "/src/assets/django-logo.png",
-                    "width": 70,
-                    "height": 70
+                    "width": 50,
+                    "height": 50
                 },
                 {
                     "name": "Sympy",
                     "logo": "/src/assets/sympy-logo.png",
-                    "width": 55,
-                    "height": 55
+                    "width": 45,
+                    "height": 45
                 },
                 {
                     "name": "Bootstrap",
                     "logo": "/src/assets/bootstrap-logo.png",
-                    "width": 70,
-                    "height": 70
+                    "width": 50,
+                    "height": 50
                 }
             ],
             "projectImage": "/src/assets/calculadora.png",

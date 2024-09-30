@@ -8,20 +8,30 @@ const { projects } = projectsData;
     id="projects"
     class="flex flex-col mx-4 md:mx-14 my-2 pb-10 px-2 md:px-0 border-solid border-2 border-black"
 >
-    <div class="flex justify-center mb-2 pt-10 pb-5 px-2">
-        <h2 class="text-4xl font-indie-flower font-black">Projects</h2>
+    <div class="text-center mb-2 pt-10 pb-5 px-2">
+        <h2 class="text-4xl font-indie-flower font-black py-6">Projects</h2>
+        <p
+            class="text-base font-lexend font-light text-gray-950 lg:px-72 mb-0 lg:mb-10"
+        >
+            Here are some of my latest projects. I’ll keep adding personal work
+            as I learn, so check back for updates!
+        </p>
     </div>
-    {
-        projects.map((project) => (
-            <ProjectCard
-                title={project.title}
-                year={project.year}
-                description={project.description}
-                technologies={project.technologies}
-                projectImage={project.projectImage}
-                githubLink={project.githubLink}
-                liveLink={project.liveLink}
-            />
-        ))
-    }
+
+    <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 lg:pl-24 lg:mx-16 place-items-center">
+        {
+            projects.map((project) => (
+                <ProjectCard
+                    title={project.title}
+                    year={project.year}
+                    description={project.description}
+                    technologies={project.technologies}
+                    projectImage={project.projectImage}
+                    githubLink={project.githubLink}
+                    liveLink={project.liveLink}
+                />
+            ))
+        }
+    </div>
+    
 </section>

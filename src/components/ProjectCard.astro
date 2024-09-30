@@ -48,69 +48,62 @@ const techImages = technologies.map((tech) => {
 });
 ---
 
-<div
-    class="grid grid-cols-1 lg:grid-rows-3 lg:grid-flow-col gap-4 lg:gap-x-10 py-10 px-5 lg:py-0 lg:px-16 font-lexend"
->
-    <div class="lg:col-span-1">
-        <p class="text-lg pb-2">{title} ({year})</p>
-        <p class="text-base lg:text-lg text-justify font-light">
-            {description}
-        </p>
-    </div>
-    <div class="lg:col-span-1">
-        <div
-            class="flex flex-row flex-wrap justify-start md:justify-center lg:justify-start py-2 gap-x-2 lg:gap-x-8 max-w-full lg:max-w-none mx-auto"
-        >
-            {
-                technologies.map((tech, index) => (
-                    <div class="flex items-center justify-center mb-2 lg:mb-0">
-                        <Image
-                            src={techImages[index]()}
-                            alt={`${tech.name} Logo`}
-                            width={tech.width}
-                            height={tech.height}
-                            class="object-contain"
-                        />
-                    </div>
-                ))
-            }
-        </div>
-    </div>
-    <div
-        class="flex flex-col items-end md:items-center lg:items-end lg:row-span-3 lg:col-span-2"
-    >
+<div class="font-lexend lg:pl-10 my-10 lg:mr-24 mx-10">
+    <div>
         <Image
             src={images[projectImage]()}
             alt=`${title} image`
             width="500"
             height="300"
-            class="object-cover border-solid border border-black"
+            class="object-cover h-auto w-96 shadow-lg rounded mb-4"
         />
-        <div class="flex space-x-4 mt-2">
-            {
-                githubLink && (
-                    <a
-                        href={githubLink}
-                        class="text-right underline"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub repository
-                    </a>
-                )
-            }
-            {
-                liveLink && (
-                    <a
-                        href={liveLink}
-                        class="text-right underline"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Live site
-                    </a>
-                )
-            }
-        </div>
+    </div>
+
+    <p class="text-lg pb-2 font-bold">{title} ({year})</p>
+    <p class="text-sm lg:text-sm text-justify">
+        {description}
+    </p>
+    <div class="flex space-x-4 mt-2">
+        {
+            githubLink && (
+                <a
+                    href={githubLink}
+                    class="text-right underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub repository
+                </a>
+            )
+        }
+        {
+            liveLink && (
+                <a
+                    href={liveLink}
+                    class="text-right underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Live site
+                </a>
+            )
+        }
+    </div>
+    <div
+        class="flex flex-row flex-wrap justify-start pt-6 pb-2 gap-x-2 lg:gap-x-8 max-w-full lg:max-w-none mx-auto"
+    >
+        {
+            technologies.map((tech, index) => (
+                <div class="flex items-center justify-center mb-2 lg:mb-0">
+                    <Image
+                        src={techImages[index]()}
+                        alt={`${tech.name} Logo`}
+                        width={tech.width}
+                        height={tech.height}
+                        class="object-contain"
+                    />
+                </div>
+            ))
+        }
     </div>
 </div>
