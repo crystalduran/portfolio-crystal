@@ -39,15 +39,10 @@
 
 <script is:inline>
     const theme = (() => {
-        if (
-            typeof localStorage !== "undefined" &&
-            localStorage.getItem("theme")
-        ) {
+        if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
             return localStorage.getItem("theme");
         }
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            return "dark";
-        }
+        // if there is no theme stored, the default theme is 'light'.
         return "light";
     })();
 
@@ -59,6 +54,7 @@
 
     window.localStorage.setItem("theme", theme);
 
+    // function to handle theme switching when toggle is clicked
     const handleToggleClick = () => {
         const element = document.documentElement;
         element.classList.toggle("dark");
@@ -71,3 +67,4 @@
         .getElementById("themeToggle")
         .addEventListener("click", handleToggleClick);
 </script>
+
