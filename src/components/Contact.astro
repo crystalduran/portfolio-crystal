@@ -11,10 +11,10 @@ import Instagram from "../assets/instagram-svgrepo-com.svg";
         <h2 class="text-4xl font-indie-flower font-black">Contact</h2>
     </div>
 
-    <p class="text-lg text-justify font-lexend font-light">
+    <p class="text-base text-justify font-lexend font-light mb-5">
         {contact.content}
     </p>
-    <div class="font-lexend font-light text-base py-5 flex flex-col gap-y-5 items-start">
+    <div class="font-lexend font-light text-base py-5 flex flex-col gap-y-10 items-start">
         <div class="flex flex-row">
             <svg
                 fill="#000000"
@@ -63,9 +63,6 @@ import Instagram from "../assets/instagram-svgrepo-com.svg";
             <img src={Devto.src} alt="Logo Devto" width="30" height="30" />
             <a href={contact.devto} target="_blank" rel="noopener noreferrer" class="pl-5">{contact.devto}</a>
         </div>
-        <div class="flex flex-row">
-            <img src={Instagram.src} alt="Logo Instagram" width="30" height="30" />
-            <a href={contact.instagram} target="_blank" rel="noopener noreferrer" class="pl-5">{contact.instagram}</a>
-        </div>
+       
     </div>
 </section>
