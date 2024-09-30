@@ -2,39 +2,51 @@
 import AboutPhoto from "../assets/crystal-bnw.png";
 import about from "../data/about.json";
 import ListItem from "./ListItem.astro";
+import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
 const { education, experience, certifications } = about;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+    "/src/assets/*.{jpeg,jpg,png,gif}",
+);
 ---
 
 <section
     id="about"
     class="flex flex-col lg:flex-row lg:space-x-3 mx-4 md:mx-14 lg:mx-14 lg:my-4 mt-4 mb-2 dark:text-zinc-100"
 >
-    <div class="basis-4/6 border-solid border-2 border-black dark:border-zinc-100 p-10">
+    <div
+        class="basis-4/6 border-solid border-2 border-black dark:border-zinc-100 p-10"
+    >
         <div class="flex justify-center mb-2">
             <h2 class="text-4xl font-indie-flower font-black">About</h2>
         </div>
 
-        <p class="text-base text-justify font-lexend font-light text-gray-950 dark:text-gray-200">
+        <p
+            class="text-base text-justify font-lexend font-light text-gray-950 dark:text-gray-200"
+        >
             I enjoy designing and building interactive and attractive visual
             experiences, for web and mobile applications. I grew up in the
             Dominican Republic, where I found my love for programming during my
             school years.
         </p>
 
-        <div id="work-experience" class="mt-10 ">
+        <div id="work-experience" class="mt-10">
             <p class="font-indie-flower font-black text-3xl pb-5">
                 Work Experience
             </p>
-            <ul class="font-lexend font-light text-base space-y-9 text-gray-950 dark:text-gray-200">
+            <ul
+                class="font-lexend font-light text-base space-y-9 text-gray-950 dark:text-gray-200"
+            >
                 {experience.map((item) => <ListItem content={item.content} />)}
             </ul>
         </div>
 
         <div id="education" class="mt-10">
             <p class="font-indie-flower font-black text-3xl pb-5">Education</p>
-            <ul class="font-lexend font-light text-base text-gray-950 dark:text-gray-200">
+            <ul
+                class="font-lexend font-light text-base text-gray-950 dark:text-gray-200"
+            >
                 {education.map((item) => <ListItem content={item.content} />)}
             </ul>
         </div>
@@ -42,7 +54,7 @@ const { education, experience, certifications } = about;
             {
                 certifications.map((item) => (
                     <Image
-                        src={item.image}
+                        src={images[`/src/assets/${item.image}`]()}
                         alt={item.alt}
                         width="80"
                         height="80"

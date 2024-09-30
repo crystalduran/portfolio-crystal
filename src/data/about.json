@@ -1,35 +1,29 @@
 {
     "education": [
         {
-            "content": "Las Americas Institute of Technology, Technologist in Software Development. Jan 2022 – Apr 2024. GPA - 4.0  ",
-            "image": "/src/assets/flag-dr.png",
-            "alt": "Flag of dominican Republic"
+            "content": "Las Americas Institute of Technology, Technologist in Software Development. Jan 2022 – Apr 2024. GPA - 4.0  "
+            
         },
         {
-            "content": "Centro Educativo Las Américas, Technical High School Degree in Development and Administration of Computer Applications. 2018 - 2021. GPA - 4.0",
-            "image": "/src/assets/flag-dr.png",
-            "alt": "Flag of dominican Republic"
+            "content": "Centro Educativo Las Américas, Technical High School Degree in Development and Administration of Computer Applications. 2018 - 2021. GPA - 4.0"
+        
         }
     ],
     "experience": [
         {
-            "content": "NEPESA S.R.L., Web Developer Intern. Feb 2024 - Apr 2024.",
-            "image": "/src/assets/flag-dr.png",
-            "alt": "Flag of dominican Republic"
+            "content": "NEPESA S.R.L., Web Developer Intern. Feb 2024 - Apr 2024."
         },
         {
-            "content": "DP World Caucedo, Intern at the IT  Department. Aug 2021 - Oct 2021.",
-            "image": "/src/assets/flag-dr.png",
-            "alt": "Flag of dominican Republic"
+            "content": "DP World Caucedo, Intern at the IT  Department. Aug 2021 - Oct 2021."
         }
     ],
     "certifications": [
         {
-            "image": "/src/assets/sfpc.png",
+            "image": "sfpc.png",
             "alt": "CertiProf, Scrum Foundation Professional Certificacion. Nov 2023."
         },
         {
-            "image": "/src/assets/javascript-essentials-1.png",
+            "image": "javascript-essentials-1.png",
             "alt": "CertiProf, Scrum Foundation Professional Certificacion. Nov 2023."
         }
     ]
