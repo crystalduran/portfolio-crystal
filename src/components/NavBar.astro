@@ -1,5 +1,7 @@
 ---
-import Logo from "../assets/logo-2.png";
+import LogoLight from "../assets/logo-2.png";
+import LogoDark from "../assets/logo-white.webp";
+import ThemeIcon from "./ThemeIcon.astro";
 ---
 
 <style>
@@ -9,25 +11,39 @@ import Logo from "../assets/logo-2.png";
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 1000; 
+        z-index: 1000;
     }
 </style>
 
 <header class="p-2">
     <!-- Menu for medium and large devices -->
-    <nav class="hidden md:flex justify-center font-lexend menu-large pt-2">
+    <nav class="hidden md:flex justify-center font-lexend menu-large pt-2 dark:text-zinc-100">
         <ul
-            class="flex flex-row space-x-9 items-center border-solid border-2 border-black m-6 py-1 px-5 text-lg bg-zinc-50"
+            class="flex flex-row space-x-9 items-center border-solid border-2 border-black dark:border-zinc-100 m-6 py-1 px-5 text-lg bg-zinc-50 dark:bg-[#121214]"
         >
             <li>
                 <a href="#">
-                    <img src={Logo.src} alt="Cat logo" width="50" height="50" />
+                    <img
+                        src={LogoLight.src}
+                        alt="Cat logo"
+                        width="50"
+                        height="50"
+                        class="dark:hidden"
+                    />
+                    <img
+                        src={LogoDark.src}
+                        alt="Cat logo"
+                        width="50"
+                        height="50"
+                        class="hidden dark:block"
+                    />
                 </a>
             </li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><ThemeIcon /></li>
         </ul>
     </nav>
 
@@ -38,7 +54,7 @@ import Logo from "../assets/logo-2.png";
             <div id="menu-toggle" class="cursor-pointer">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-10 w-10 text-black pl-3"
+                    class="h-10 w-10 text-black dark:text-white pl-3"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -55,10 +71,18 @@ import Logo from "../assets/logo-2.png";
             <div class="flex justify-center items-center">
                 <a href="#">
                     <img
-                        src={Logo.src}
-                        alt="Logo de gato"
+                        src={LogoLight.src}
+                        alt="Cat logo"
                         width="50"
                         height="50"
+                        class="dark:hidden"
+                    />
+                    <img
+                        src={LogoDark.src}
+                        alt="Cat logo"
+                        width="50"
+                        height="50"
+                        class="hidden dark:block"
                     />
                 </a>
             </div>
@@ -70,13 +94,13 @@ import Logo from "../assets/logo-2.png";
         <!-- Modal menu -->
         <div
             id="menu"
-            class="hidden fixed inset-0 flex-col justify-center items-center bg-zinc-100 z-50 font-lexend"
+            class="hidden fixed inset-0 flex-col justify-center items-center bg-zinc-100 dark:bg-[#121214] z-50 font-lexend"
         >
             <!-- Button to close the menu -->
             <div class="absolute top-4 right-4 cursor-pointer" id="menu-close">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-8 w-8"
+                    class="h-8 w-8 dark:text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -92,21 +116,29 @@ import Logo from "../assets/logo-2.png";
             <div class="mb-10 mt-5 flex justify-center">
                 <a href="#">
                     <img
-                        src={Logo.src}
-                        alt="Logo de gato"
-                        width="120"
-                        height="120"
-                    />
+                    src={LogoLight.src}
+                    alt="Cat logo"
+                    width="120"
+                    height="120"
+                    class="dark:hidden"
+                />
+                <img
+                    src={LogoDark.src}
+                    alt="Cat logo"
+                    width="120"
+                    height="120"
+                    class="hidden dark:block"
+                />
                 </a>
             </div>
             <!-- Navigation links -->
             <div
-                class="flex flex-col items-center border-solid border-2 border-black mx-5 p-10"
+                class="flex flex-col items-center border-solid border-2 border-black dark:border-zinc-100 mx-5 p-10 dark:text-zinc-200"
             >
                 <a href="#about" class="text-4xl mb-10">About</a>
                 <a href="#projects" class="text-4xl mb-10">Projects</a>
                 <a href="#skills" class="text-4xl mb-10">Skills</a>
-                <a href="#contact" class="text-4xl">Contact</a>
+                <a href="#contact" class="text-4xl mb-10">Contact</a>
             </div>
         </div>
     </header>
@@ -143,7 +175,7 @@ import Logo from "../assets/logo-2.png";
                     // Scroll to the target element with a smooth animation, adjusted for the menu height
                     window.scrollTo({
                         top: targetElement.offsetTop - offset,
-                        behavior: "smooth", 
+                        behavior: "smooth",
                     });
                     // Close the mobile menu if it is open
                     if (!menu?.classList.contains("hidden")) {

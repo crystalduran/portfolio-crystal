@@ -21,12 +21,12 @@ if (!images[imagePath])
     );
 ---
 
-<div class="flex flex-col lg:flex-row gap-x-3 border-solid border border-black bg-white p-4">
+<div class="flex flex-col lg:flex-row gap-x-3 border-solid border border-black dark:border-zinc-100 bg-white dark:bg-[#0E0E10] p-4">
     <div>
         <Image src={images[imagePath]()} alt={alt} width="80" height="80" />
     </div>
     <div class="flex flex-col pt-3">
-        <p class="text-base md:text-xl">{name}</p>
-        <p class="text-sm md:text-base">{level}</p>
+        <p class="text-base md:text-xl dark:text-zinc-100">{name}</p>
+        <p class="text-sm md:text-base dark:text-gray-200">{level}</p>
     </div>
 </div>
