@@ -1,0 +1,15 @@
+---
+interface Props {
+    text: string;
+    to: string;
+}
+
+const { text, to } = Astro.props;
+---
+
+
+<a
+    class="font-lexend bg-black hover:bg-gray-950 text-white py-2 px-4 mt-2" href=`#${to}`;
+>
+    {text}
+</a>
