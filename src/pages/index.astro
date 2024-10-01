@@ -6,7 +6,6 @@ import NavBar from "../components/NavBar.astro";
 import Projects from "../components/Projects.astro";
 import Skills from "../components/Skills.astro";
 import Footer from "../components/Footer.astro";
-
 ---
 
 <html lang="en">
@@ -26,17 +25,19 @@ import Footer from "../components/Footer.astro";
 		/>
 		<title>Crystal Durán</title>
 	</head>
-	<body class="bg-zinc-50 dark:bg-[#121214] md:pt-[90px]">
+	<body class="bg-zinc-50 dark:bg-[#121214] pt-[70px] md:pt-[90px]">
 		<NavBar />
-		<Hero />
-		<main>
+		<main id="main-content">
+			<Hero />
 			<About />
 			<Projects />
-			<div class="flex flex-col-reverse lg:flex-row lg:space-x-3 mx-4 md:mx-0 lg:mx-14 md:my-4">
-				<Contact/>
-				<Skills/>
+			<div
+				class="flex flex-col-reverse lg:flex-row lg:space-x-3 mx-4 md:mx-0 lg:mx-14 md:my-4"
+			>
+				<Contact />
+				<Skills />
 			</div>
 		</main>
-		<Footer/>
+		<Footer />
 	</body>
 </html>

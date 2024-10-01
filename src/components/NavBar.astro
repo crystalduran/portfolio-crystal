@@ -1,7 +1,6 @@
 ---
 import LogoLight from "../assets/logo-2.png";
 import LogoDark from "../assets/logo-white.webp";
-import ThemeIcon from "./ThemeIcon.astro";
 ---
 
 <style>
@@ -17,9 +16,11 @@ import ThemeIcon from "./ThemeIcon.astro";
 
 <header class="p-2">
     <!-- Menu for medium and large devices -->
-    <nav class="hidden md:flex justify-center font-lexend menu-large pt-2 dark:text-zinc-100">
+    <nav
+        class="hidden md:flex justify-center font-lexend menu-large pt-2 dark:text-zinc-100"
+    >
         <ul
-            class="flex flex-row space-x-9 items-center border-solid border-2 border-black dark:border-zinc-100 m-6 py-1 px-5 text-lg bg-zinc-50 dark:bg-[#121214]"
+            class="flex flex-row space-x-9 items-center border-solid border border-black dark:border-zinc-100 m-6 py-1 px-5 text-lg bg-zinc-50 dark:bg-[#121214]"
         >
             <li>
                 <a href="#">
@@ -43,16 +44,16 @@ import ThemeIcon from "./ThemeIcon.astro";
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><ThemeIcon /></li>
         </ul>
     </nav>
 
     <!-- Menu for small devices -->
     <header class="md:hidden">
-        <nav class="flex justify-between items-center pt-2 pb-4">
+        <nav class="flex fixed top-0 left-0 right-0 justify-between items-center pt-2 pb-4 bg-zinc-50 border-b border-black z-50">
             <!-- Menu icon -->
             <div id="menu-toggle" class="cursor-pointer">
                 <svg
+                    id="hamburger-icon"
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-10 w-10 text-black dark:text-white pl-3"
                     fill="none"
@@ -64,6 +65,20 @@ import ThemeIcon from "./ThemeIcon.astro";
                         stroke-linejoin="round"
                         stroke-width="2"
                         d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg
+                    id="close-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 text-black dark:text-white pl-3 hidden"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </div>
 
@@ -94,68 +109,49 @@ import ThemeIcon from "./ThemeIcon.astro";
         <!-- Modal menu -->
         <div
             id="menu"
-            class="hidden fixed inset-0 flex-col justify-center items-center bg-zinc-100 dark:bg-[#121214] z-50 font-lexend"
+            class="hidden fixed flex-col justify-center items-center border-solid border border-black dark:bg-[#121214] z-50 font-lexend bg-zinc-50 w-[320px] mx-2"
         >
-            <!-- Button to close the menu -->
-            <div class="absolute top-4 right-4 cursor-pointer" id="menu-close">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-8 w-8 dark:text-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </div>
-            <!-- Logo on mobile menu -->
-            <div class="mb-10 mt-5 flex justify-center">
-                <a href="#">
-                    <img
-                    src={LogoLight.src}
-                    alt="Cat logo"
-                    width="120"
-                    height="120"
-                    class="dark:hidden"
-                />
-                <img
-                    src={LogoDark.src}
-                    alt="Cat logo"
-                    width="120"
-                    height="120"
-                    class="hidden dark:block"
-                />
-                </a>
-            </div>
             <!-- Navigation links -->
             <div
-                class="flex flex-col items-center border-solid border-2 border-black dark:border-zinc-100 mx-5 p-10 dark:text-zinc-200"
+                class="flex flex-col items-center mx-5 p-10 dark:text-zinc-200 text-xl gap-y-4"
             >
-                <a href="#about" class="text-4xl mb-10">About</a>
-                <a href="#projects" class="text-4xl mb-10">Projects</a>
-                <a href="#skills" class="text-4xl mb-10">Skills</a>
-                <a href="#contact" class="text-4xl mb-10">Contact</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </header>
 </header>
 
+<style>
+    .blur {
+        filter: blur(4px);
+        transition: filter 0.3s ease;
+    }
+</style>
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const menuToggle = document.getElementById("menu-toggle");
-        const menuClose = document.getElementById("menu-close");
         const menu = document.getElementById("menu");
+        const hamburgerIcon = document.getElementById("hamburger-icon");
+        const closeIcon = document.getElementById("close-icon");
+        const main = document.getElementById("main-content");
 
         menuToggle?.addEventListener("click", function () {
             menu?.classList.toggle("hidden");
-        });
 
-        menuClose?.addEventListener("click", function () {
-            menu?.classList.add("hidden");
+            // Cambiar el ícono según el estado del menú
+            if (menu?.classList.contains("hidden")) {
+                hamburgerIcon?.classList.remove("hidden");
+                closeIcon?.classList.add("hidden");
+                main?.classList.remove("blur");
+            } else {
+                hamburgerIcon?.classList.add("hidden");
+                closeIcon?.classList.remove("hidden");
+                main?.classList.add("blur");
+            }
         });
 
         // Script for smooth scrolling with offset
@@ -180,6 +176,9 @@ import ThemeIcon from "./ThemeIcon.astro";
                     // Close the mobile menu if it is open
                     if (!menu?.classList.contains("hidden")) {
                         menu?.classList.add("hidden");
+                        hamburgerIcon?.classList.remove("hidden");
+                        closeIcon?.classList.add("hidden");
+                        main?.classList.remove("blur");
                     }
                 }
             });
