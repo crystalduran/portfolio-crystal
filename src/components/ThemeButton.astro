@@ -2,8 +2,11 @@
 
 ---
 
-<button id="themeToggle" class="p-2 block">
-    <svg width="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<button
+    id="themeToggle"
+    class="pt-2"
+>
+    <svg width="22px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
         <path
             class="sun"
             fill-rule="evenodd"
@@ -18,10 +21,6 @@
 </button>
 
 <style>
-    #themeToggle {
-        border: 0;
-        background: none;
-    }
     .sun {
         fill: black;
     }
@@ -39,7 +38,10 @@
 
 <script is:inline>
     const theme = (() => {
-        if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+        if (
+            typeof localStorage !== "undefined" &&
+            localStorage.getItem("theme")
+        ) {
             return localStorage.getItem("theme");
         }
         // if there is no theme stored, the default theme is 'light'.
@@ -67,4 +69,3 @@
         .getElementById("themeToggle")
         .addEventListener("click", handleToggleClick);
 </script>
-
