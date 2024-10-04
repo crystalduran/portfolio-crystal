@@ -52,7 +52,7 @@
                     "height": 50
                 }
             ],
-            "projectImage": "/src/assets/nepesa-project.png",
+            "projectImage": "/src/assets/nepesa.png",
             "liveLink": "https://nepesa.vercel.app/"
         },
         {
