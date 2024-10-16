@@ -49,7 +49,9 @@ import LogoDark from "../assets/logo-white.webp";
 
     <!-- Menu for small devices -->
     <header class="md:hidden">
-        <nav class="flex fixed top-0 left-0 right-0 justify-between items-center pt-2 pb-4 bg-zinc-50 dark:bg-[#121214] border-b-2 border-black dark:border-zinc-100 z-50">
+        <nav
+            class="flex fixed top-0 left-0 right-0 justify-between items-center pt-2 pb-4 bg-zinc-50 dark:bg-[#121214] border-b-2 border-black dark:border-zinc-100 z-50"
+        >
             <!-- Menu icon -->
             <div id="menu-toggle" class="cursor-pointer">
                 <svg
@@ -154,25 +156,19 @@ import LogoDark from "../assets/logo-white.webp";
             }
         });
 
-        // Script for smooth scrolling with offset
-        const offset = 90; // Value set according to the height of the menu
         const links =
             document.querySelectorAll<HTMLAnchorElement>("a[href^='#']");
 
         links.forEach((link) => {
-            link.addEventListener("click", function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute("href")?.substring(1); // Gets the target ID without the '#'
+            link.addEventListener("click", function () {
+                const targetId = this.getAttribute("href")?.substring(1);
                 const targetElement = targetId
                     ? document.getElementById(targetId)
                     : null;
 
                 if (targetElement) {
-                    // Scroll to the target element with a smooth animation, adjusted for the menu height
-                    window.scrollTo({
-                        top: targetElement.offsetTop - offset,
-                        behavior: "smooth",
-                    });
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+
                     // Close the mobile menu if it is open
                     if (!menu?.classList.contains("hidden")) {
                         menu?.classList.add("hidden");
