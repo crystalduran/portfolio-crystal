@@ -69,16 +69,16 @@ import GitHubDark from "../assets/GitHubDark.png";
         <div class="flex flex-row ">
             <img src={LinkedIn.src} alt="Logo LinkedIn" width="20" height="20" class="w-auto h-auto max-w-[30px] max-h-[30px] dark:hidden" />
             <img src={LinkedInDark.src} alt="Logo LinkedIn" width="20" height="20" class="w-auto h-auto max-w-[30px] max-h-[30px] hidden dark:block" />
-            <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" class="pl-5">{contact.linkedin}</a>
+            <a href={contact.linkedin[0]} target="_blank" rel="noopener noreferrer" class="pl-5">{contact.linkedin[1]}</a>
         </div>
         <div class="flex flex-row">
             <img src={GitHub.src} alt="Logo GitHub" width="30" height="30" class="w-[26px h-[26px] md:h-[30px] md:w-[30px] dark:hidden"/>
             <img src={GitHubDark.src} alt="Logo GitHub" width="30" height="30" class="w-[20px h-[20px] md:h-[30px] md:w-[30px] hidden dark:block"/>
-            <a href={contact.github} target="_blank" rel="noopener noreferrer" class="pl-5">{contact.github}</a>
+            <a href={contact.github[0]} target="_blank" rel="noopener noreferrer" class="pl-5">{contact.github[1]}</a>
         </div>
         <div class="flex flex-row">
             <img src={Devto.src} alt="Logo Devto" width="30" height="30" class="w-auto h-auto max-w-[30px] max-h-[30px]"/>
-            <a href={contact.devto} target="_blank" rel="noopener noreferrer" class="pl-5">{contact.devto}</a>
+            <a href={contact.devto[0]} target="_blank" rel="noopener noreferrer" class="pl-5">{contact.devto[1]}</a>
         </div>
     </div>
 </section>

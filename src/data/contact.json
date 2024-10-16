@@ -2,8 +2,16 @@
     "content": "Feel free to reach out! I’d love to hear from you, whether it's for advice, collaboration, or sharing new knowledge. I'm always open to learning and new opportunities.",
     "location": "Santo Domingo, Dominican Republic",
     "mail": "crystal12.duran@gmail.com",
-    "linkedin": "https://linkedin.com/in/crystal-durán-núñez-2b14a5279",
-    "github": "https://github.com/crystalduran",
-    "devto": "https://dev.to/crystalduran",
-    "instagram": "https://instagram.com/crystaldurann/"
+    "linkedin": [
+        "https://www.linkedin.com/in/crystal-durann/",
+        "in/crystal-durann"
+    ],
+    "github": [
+        "https://github.com/crystalduran",
+        "github.com/crystalduran"
+    ],
+    "devto": [
+        "https://dev.to/crystalduran",
+        "dev.to/crystalduran"
+    ]
 }
