@@ -68,6 +68,11 @@
       "image": "/src/assets/bootstrap-logo.png"
     },
     {
+      "name": "Angular",
+      "level": "Intermediate",
+      "image": "/src/assets/angular-logo.png"
+    },
+    {
       "name": "Django",
       "level": "Beginner",
       "image": "/src/assets/django-logo.png"
@@ -112,13 +117,18 @@
       "image": "/src/assets/nodejs-logo.png"
     },
     {
+      "name": "Docker",
+      "level": "Intermediate",
+      "image": "/src/assets/docker-logo.svg"
+    },
+    {
       "name": "Azure DevOps",
       "level": "Intermediate",
       "image": "/src/assets/devops-logo.png"
     },
     {
       "name": "Figma",
-      "level": "Beginner",
+      "level": "Intermediate",
       "image": "/src/assets/figma-logo.png"
     },
     {

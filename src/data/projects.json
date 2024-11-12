@@ -1,6 +1,39 @@
 {
     "projects": [
         {
+            "title": "Personal Blog",
+            "year": "2024",
+            "description": "A personal blog built with Angular, Express.js, Node.js and MongoDB, with a responsive design using Angular Material and Sass.",
+            "technologies": [
+                {
+                    "name": "MongoDB",
+                    "logo": "/src/assets/mongodb-logo.png",
+                    "width": 25,
+                    "height": 25
+                },
+                {
+                    "name": "Express",
+                    "logo": "/src/assets/express-logo.png",
+                    "width": 50,
+                    "height": 50
+                },
+                {
+                    "name": "Angular",
+                    "logo": "/src/assets/angular-logo.png",
+                    "width": 45,
+                    "height": 45
+                },
+                {
+                    "name": "Node.js",
+                    "logo": "/src/assets/nodejs-logo.png",
+                    "width": 50,
+                    "height": 50
+                }
+            ],
+            "projectImage": "/src/assets/angular-blog-project.png",
+            "liveLink": "https://crystalduran-blog.vercel.app/"
+        },
+        {
             "title": "Anime Collection",
             "year": "2024",
             "description": "A website that showcases my favorite anime, with details fetched from an API and a profile selection similar to those of streaming platforms.",
@@ -85,7 +118,7 @@
         {
             "title": "Civil Defense RD",
             "year": "2024",
-            "description": "I designed the interface for a mobile application for Defensa Civil RD (unofficial) in a group project, the app was designed to improve emergency response in the Dominican Republic. ",
+            "description": "I developed the interface for a mobile application for Defensa Civil RD (unofficial) in a group project, the app was designed to improve emergency response in the Dominican Republic. ",
             "technologies": [
                 {
                     "name": "React Native",
