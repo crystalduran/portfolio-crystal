@@ -29,7 +29,7 @@ const {
 
 // import.meta.glob returns an object with all the image paths within the src/assets directory that match the specified extensions
 const images = import.meta.glob<{ default: ImageMetadata }>(
-    "/src/assets/*.{jpeg,jpg,png,gif}",
+    "/src/assets/*.{jpeg,jpg,png,gif,webp}",
 );
 
 // Check if the specified image exists and throw an error if an invalid file path is passed as a prop

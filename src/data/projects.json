@@ -1,6 +1,34 @@
 {
     "projects": [
         {
+            "title": "Vision Board Creator",
+            "year": "2024",
+            "description": "A website for creating a vision board through a form, the result is a collage with the photos and texts the user provided. ",
+            "technologies": [
+                {
+                    "name": "React",
+                    "logo": "/src/assets/react-logo.png",
+                    "width": 50,
+                    "height": 50
+                },
+                {
+                    "name": "TypeScript",
+                    "logo": "/src/assets/ts-logo.png",
+                    "width": 45,
+                    "height": 45
+                },
+                {
+                    "name": "Vite",
+                    "logo": "/src/assets/vite.png",
+                    "width": 50,
+                    "height": 50
+                }
+            ],
+            "projectImage": "/src/assets/dreamcraft.png",
+            "githubLink": "https://github.com/crystalduran/vision-board",
+            "liveLink": "https://dreamcraft.vercel.app/"
+        },
+        {
             "title": "Personal Blog",
             "year": "2024",
             "description": "A personal blog built with Angular, Express.js, Node.js and MongoDB, with a responsive design using Angular Material and Sass.",
