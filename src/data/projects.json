@@ -24,7 +24,7 @@
                     "height": 50
                 }
             ],
-            "projectImage": "/src/assets/dreamcraft-project.png",
+            "projectImage": "/src/assets/project-dreamcraft.png",
             "githubLink": "https://github.com/crystalduran/vision-board",
             "liveLink": "https://dreamcraft.vercel.app/"
         },
