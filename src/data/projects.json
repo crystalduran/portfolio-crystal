@@ -1,6 +1,21 @@
 {
     "projects": [
         {
+            "title": "Spotify player widget",
+            "year": "2025",
+            "description": "A Spotify widget built with Electron, displays track info, playback controls, and adapts UI colors to album art.",
+            "technologies": [
+                {
+                    "name": "Electron",
+                    "logo": "https://i.imgur.com/T3lV1lY.png",
+                    "width": 50,
+                    "height": 50
+                }
+            ],
+            "githubLink": "https://github.com/crystalduran/electron-now-playing-widget",
+            "projectImage": "https://i.imgur.com/TaSPbFU.png"
+        },
+        {
             "title": "Vision Board Creator",
             "year": "2024",
             "description": "A website for creating a vision board through a form, the result is a collage with the photos and texts the user provided. ",
