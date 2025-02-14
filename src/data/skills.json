@@ -3,160 +3,160 @@
     {
       "name": "JavaScript",
       "level": "Advanced",
-      "image": "/src/assets/JavaScript-logo.png"
+      "image": "https://i.imgur.com/fKZVVPg.png"
     },
     {
       "name": "TypeScript",
       "level": "Intermediate",
-      "image": "/src/assets/ts-logo.png"
+      "image": "https://i.imgur.com/KPMTHMK.png"
     },
     {
       "name": "HTML",
       "level": "Advanced",
-      "image": "/src/assets/html-logo.png"
+      "image": "https://i.imgur.com/ueS1aOT.png"
     },
     {
       "name": "CSS",
       "level": "Advanced",
-      "image": "/src/assets/css-logo.png"
+      "image": "https://i.imgur.com/Kq7fs7T.png"
     },
     {
       "name": "Python",
       "level": "Intermediate",
-      "image": "/src/assets/python-logo.png"
+      "image": "https://i.imgur.com/3IDDDZe.png"
     },
     {
       "name": "C#",
       "level": "Beginner",
-      "image": "/src/assets/csharp-logo.png"
-    },
-    {
-      "name": "C++",
-      "level": "Beginner",
-      "image": "/src/assets/cpp-logo.png"
+      "image": "https://i.imgur.com/1KKNfEK.png"
     }
   ],
   "frameworks": [
     {
       "name": "Astro",
-      "level": "Advanced",
-      "image": "/src/assets/astro-logo.png"
+      "level": "Intermediate",
+      "image": "https://i.imgur.com/53lJYVb.png"
     },
     {
       "name": "Flutter",
       "level": "Intermediate",
-      "image": "/src/assets/flutter-logo.png"
+      "image": "https://i.imgur.com/bD4luQa.png"
     },
     {
       "name": "Express",
       "level": "Intermediate",
-      "image": "/src/assets/express-logo.png"
+      "image": "https://i.imgur.com/GIZ9kGm.png"
     },
     {
       "name": "React Native",
       "level": "Intermediate",
-      "image": "/src/assets/react-logo.png"
+      "image": "https://i.imgur.com/smb7kms.png"
     },
     {
       "name": "Tailwind CSS",
       "level": "Advanced",
-      "image": "/src/assets/tailwindcss-logo.png"
+      "image": "https://i.imgur.com/H6qdABk.png"
     },
     {
       "name": "Bootstrap",
       "level": "Intermediate",
-      "image": "/src/assets/bootstrap-logo.png"
+      "image": "https://i.imgur.com/w8KsIR3.png"
     },
     {
       "name": "Angular",
       "level": "Intermediate",
-      "image": "/src/assets/angular-logo.png"
+      "image": "https://i.imgur.com/PIzVg6p.png"
     },
     {
       "name": "Django",
       "level": "Beginner",
-      "image": "/src/assets/django-logo.png"
-    },
-    {
-      "name": ".NET",
-      "level": "Beginner",
-      "image": "/src/assets/net-logo.png"
+      "image": "https://i.imgur.com/KoGnW54.png"
     }
   ],
   "libraries": [
     {
       "name": "React",
       "level": "Intermediate ",
-      "image": "/src/assets/react-logo.png"
-    },
-    {
-      "name": "daisyUI",
-      "level": "Advanced",
-      "image": "/src/assets/daisyui-logo.png"
+      "image": "https://i.imgur.com/smb7kms.png"
     },
     {
       "name": "axios",
       "level": "Beginner",
-      "image": "/src/assets/axios-logo.png"
+      "image": "https://i.imgur.com/J300cEo.png"
+    },
+    {
+      "name": "Lit",
+      "level": "Beginner",
+      "image": "https://i.imgur.com/GaYgLuF.png"
     }
   ],
   "tools": [
     {
       "name": "Git",
       "level": "Intermediate ",
-      "image": "/src/assets/git-logo.png"
+      "image": "https://i.imgur.com/0DxANqO.png"
     },
     {
       "name": "GitHub",
       "level": "Intermediate",
-      "image": "/src/assets/github-logo.png"
+      "image": "https://i.imgur.com/cUB3dpl.png"
     },
     {
       "name": "Node.js",
       "level": "Intermediate",
-      "image": "/src/assets/nodejs-logo.png"
+      "image": "https://i.imgur.com/iJH3jjq.png"
     },
     {
       "name": "Docker",
       "level": "Intermediate",
-      "image": "/src/assets/docker-logo.svg"
+      "image": "https://i.imgur.com/xqrwlc1.png"
     },
     {
       "name": "Azure DevOps",
       "level": "Intermediate",
-      "image": "/src/assets/devops-logo.png"
+      "image": "https://i.imgur.com/4JRszry.png"
     },
     {
       "name": "Figma",
       "level": "Intermediate",
-      "image": "/src/assets/figma-logo.png"
+      "image": "https://i.imgur.com/Hj6oNLo.png"
+    },
+    {
+      "name": "Vitest",
+      "level": "Intermediate",
+      "image": "https://i.imgur.com/JRIyXQw.png"
+    },
+    {
+      "name": ".NET",
+      "level": "Beginner",
+      "image": "https://i.imgur.com/Z3l6SUy.png"
     },
     {
       "name": "Selenium",
       "level": "Beginner",
-      "image": "/src/assets/selenium-logo.png"
+      "image": "https://i.imgur.com/LM0nONU.png"
     }
   ],
   "databases": [
     {
       "name": "Microsoft SQL Server",
       "level": "Advanced",
-      "image": "/src/assets/sqlserver-logo.png"
+      "image": "https://i.imgur.com/GNkbs4l.png"
     },
     {
       "name": "MySQL",
       "level": "Intermediate",
-      "image": "/src/assets/mysql-logo.png"
+      "image": "https://i.imgur.com/nm21p3U.png"
     },
     {
       "name": "MongoDB",
       "level": "Intermediate",
-      "image": "/src/assets/mongodb2-logo.png"
+      "image": "https://i.imgur.com/foclcW1.png"
     },
     {
       "name": "PostgreSQL",
       "level": "Beginner",
-      "image": "/src/assets/postgresql-logo.png"
+      "image": "https://i.imgur.com/jjU9kO2.png"
     }
   ]
 }

@@ -7,24 +7,24 @@
             "technologies": [
                 {
                     "name": "React",
-                    "logo": "/src/assets/react-logo.png",
+                    "logo": "https://i.imgur.com/smb7kms.png",
                     "width": 50,
                     "height": 50
                 },
                 {
                     "name": "TypeScript",
-                    "logo": "/src/assets/ts-logo.png",
+                    "logo": "https://i.imgur.com/KPMTHMK.png",
                     "width": 45,
                     "height": 45
                 },
                 {
                     "name": "Vite",
-                    "logo": "/src/assets/vite.png",
+                    "logo": "https://i.imgur.com/hxNhOjm.png",
                     "width": 50,
                     "height": 50
                 }
             ],
-            "projectImage": "/src/assets/project-dreamcraft.png",
+            "projectImage": "https://i.imgur.com/qsZMEVR.png",
             "githubLink": "https://github.com/crystalduran/vision-board",
             "liveLink": "https://dreamcraft.vercel.app/"
         },
@@ -35,30 +35,30 @@
             "technologies": [
                 {
                     "name": "MongoDB",
-                    "logo": "/src/assets/mongodb-logo.png",
+                    "logo": "https://i.imgur.com/7wKJLFm.png",
                     "width": 25,
                     "height": 25
                 },
                 {
                     "name": "Express",
-                    "logo": "/src/assets/express-logo.png",
+                    "logo": "https://i.imgur.com/GIZ9kGm.png",
                     "width": 50,
                     "height": 50
                 },
                 {
                     "name": "Angular",
-                    "logo": "/src/assets/angular-logo.png",
+                    "logo": "https://i.imgur.com/PIzVg6p.png",
                     "width": 45,
                     "height": 45
                 },
                 {
                     "name": "Node.js",
-                    "logo": "/src/assets/nodejs-logo.png",
+                    "logo": "https://i.imgur.com/iJH3jjq.png",
                     "width": 50,
                     "height": 50
                 }
             ],
-            "projectImage": "/src/assets/angular-blog-project.png",
+            "projectImage": "https://i.imgur.com/o8uKY6n.png",
             "liveLink": "https://crystalduran-blog.vercel.app/"
         },
         {
@@ -68,24 +68,24 @@
             "technologies": [
                 {
                     "name": "React",
-                    "logo": "/src/assets/react-logo.png",
+                    "logo": "https://i.imgur.com/smb7kms.png",
                     "width": 50,
                     "height": 50
                 },
                 {
                     "name": "TypeScript",
-                    "logo": "/src/assets/ts-logo.png",
+                    "logo": "https://i.imgur.com/KPMTHMK.png",
                     "width": 45,
                     "height": 45
                 },
                 {
                     "name": "Vite",
-                    "logo": "/src/assets/vite.png",
+                    "logo": "https://i.imgur.com/hxNhOjm.png",
                     "width": 50,
                     "height": 50
                 }
             ],
-            "projectImage": "/src/assets/crystal-react-anime-2.png",
+            "projectImage": "https://i.imgur.com/vvRmBxv.png",
             "githubLink": "https://github.com/crystalduran/react-anime-crystal",
             "liveLink": "https://react-anime-crystal.vercel.app/"
         },
@@ -96,24 +96,24 @@
             "technologies": [
                 {
                     "name": "Astro",
-                    "logo": "/src/assets/astro-logo.png",
+                    "logo": "https://i.imgur.com/53lJYVb.png",
                     "width": 50,
                     "height": 50
                 },
                 {
                     "name": "TypeScript",
-                    "logo": "/src/assets/ts-logo.png",
+                    "logo": "https://i.imgur.com/KPMTHMK.png",
                     "width": 45,
                     "height": 45
                 },
                 {
                     "name": "Tailwind CSS",
-                    "logo": "/src/assets/tailwindcss-logo.png",
+                    "logo": "https://i.imgur.com/H6qdABk.png",
                     "width": 50,
                     "height": 50
                 }
             ],
-            "projectImage": "/src/assets/nepesa.png",
+            "projectImage": "https://i.imgur.com/GAodsx4.png",
             "liveLink": "https://nepesa.vercel.app/"
         },
         {
@@ -123,24 +123,24 @@
             "technologies": [
                 {
                     "name": "Astro",
-                    "logo": "/src/assets/astro-logo.png",
+                    "logo": "https://i.imgur.com/53lJYVb.png",
                     "width": 50,
                     "height": 50
                 },
                 {
                     "name": "TypeScript",
-                    "logo": "/src/assets/ts-logo.png",
+                    "logo": "https://i.imgur.com/KPMTHMK.png",
                     "width": 45,
                     "height": 45
                 },
                 {
                     "name": "Tailwind CSS",
-                    "logo": "/src/assets/tailwindcss-logo.png",
+                    "logo": "https://i.imgur.com/H6qdABk.png",
                     "width": 50,
                     "height": 50
                 }
             ],
-            "projectImage": "/src/assets/portfolio-project.png",
+            "projectImage": "https://i.imgur.com/DjEUvPw.png",
             "githubLink": "https://github.com/crystalduran/portfolio-crystal"
         },
         {
@@ -150,30 +150,30 @@
             "technologies": [
                 {
                     "name": "React Native",
-                    "logo": "/src/assets/react-logo.png",
+                    "logo": "https://i.imgur.com/smb7kms.png",
                     "width": 50,
                     "height": 50
                 },
                 {
                     "name": "Expo",
-                    "logo": "/src/assets/expo-logo.png",
+                    "logo": "https://i.imgur.com/d5iMP5L.png",
                     "width": 55,
                     "height": 55
                 },
                 {
                     "name": "JavaScript",
-                    "logo": "/src/assets/JavaScript-logo.png",
+                    "logo": "https://i.imgur.com/fKZVVPg.png",
                     "width": 45,
                     "height": 45
                 },
                 {
                     "name": "Axios",
-                    "logo": "/src/assets/axios-logo.png",
+                    "logo": "https://i.imgur.com/J300cEo.png",
                     "width": 70,
                     "height": 70
                 }
             ],
-            "projectImage": "/src/assets/defensa-civil.png",
+            "projectImage": "https://i.imgur.com/XQgK134.png",
             "githubLink": "https://github.com/20220005/AppDefensaCivil"
         },
         {
@@ -183,24 +183,24 @@
             "technologies": [
                 {
                     "name": "Django",
-                    "logo": "/src/assets/django-logo.png",
+                    "logo": "https://i.imgur.com/KoGnW54.png",
                     "width": 50,
                     "height": 50
                 },
                 {
                     "name": "Sympy",
-                    "logo": "/src/assets/sympy-logo.png",
+                    "logo": "https://i.imgur.com/hZeswnz.png",
                     "width": 45,
                     "height": 45
                 },
                 {
                     "name": "Bootstrap",
-                    "logo": "/src/assets/bootstrap-logo.png",
+                    "logo": "https://i.imgur.com/w8KsIR3.png",
                     "width": 50,
                     "height": 50
                 }
             ],
-            "projectImage": "/src/assets/calculadora.png",
+            "projectImage": "https://i.imgur.com/h8zTSqf.png",
             "githubLink": "https://github.com/crystalduran/django-app-calculo"
         }
     ]

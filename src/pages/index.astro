@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 import About from "../components/About.astro";
 import Contact from "../components/Contact.astro";
 import Hero from "../components/Hero.astro";
@@ -33,14 +35,14 @@ import Footer from "../components/Footer.astro";
 		/>
 		<title>Crystal Durán</title>
 	</head>
-	<body class="bg-[#FEFFFC] dark:bg-[#121214] pt-[70px] md:pt-[90px]">
+	<body class="bg-[#FEFFFC] dark:bg-[#121214] pt-[70px] md:pt-[90px] 2xl:mx-36">
 		<NavBar />
 		<main id="main-content">
 			<Hero />
 			<About />
 			<Projects />
 			<div
-				class="flex flex-col-reverse lg:flex-row lg:space-x-3 mx-4 md:mx-0 lg:mx-14 md:my-4"
+				class="flex flex-col-reverse lg:flex-row md:gap-x-3 mx-4 md:mx-0 lg:mx-14 md:my-4"
 			>
 				<Contact />
 				<Skills />

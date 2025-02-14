@@ -19,11 +19,11 @@
     ],
     "certifications": [
         {
-            "image": "sfpc.png",
+            "image": "https://i.imgur.com/3sb6W8b.png",
             "alt": "CertiProf, Scrum Foundation Professional Certificacion. Nov 2023."
         },
         {
-            "image": "javascript-essentials-1.png",
+            "image": "https://i.imgur.com/02ugKTE.png",
             "alt": "CertiProf, Scrum Foundation Professional Certificacion. Nov 2023."
         }
     ]

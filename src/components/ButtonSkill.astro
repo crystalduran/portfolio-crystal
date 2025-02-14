@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 interface Props {
     name: string;
 }
@@ -10,7 +12,7 @@ const buttonId = `${name}-button`;
 
 <button
     id={buttonId}
-    class="border-solid border bg-white dark:bg-[#121214] border-black dark:border-zinc-100 font-lexend text-xl py-2 px-4 flex-1 hover:bg-black dark:hover:bg-gray-200 dark:hover:text-black hover:text-white hover:border-black dark:text-zinc-100"
+    class="cursor-pointer border-solid border bg-white dark:bg-[#121214] border-black dark:border-zinc-100 font-lexend text-xl py-2 px-4 flex-1 hover:bg-black dark:hover:bg-gray-200 dark:hover:text-black hover:text-white hover:border-black dark:text-zinc-100"
 >
     {displayName}
 </button>

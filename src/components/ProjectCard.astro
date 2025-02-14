@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
@@ -27,31 +29,12 @@ const {
     liveLink,
 } = Astro.props;
 
-// import.meta.glob returns an object with all the image paths within the src/assets directory that match the specified extensions
-const images = import.meta.glob<{ default: ImageMetadata }>(
-    "/src/assets/*.{jpeg,jpg,png,gif,webp}",
-);
-
-// Check if the specified image exists and throw an error if an invalid file path is passed as a prop
-if (!images[projectImage])
-    throw new Error(
-        `"${projectImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
-    );
-
-// Map each technology to its corresponding image metadata, throwing an error if the image does not exist
-const techImages = technologies.map((tech) => {
-    if (!images[tech.logo])
-        throw new Error(
-            `"${tech.logo}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
-        );
-    return images[tech.logo];
-});
 ---
 
 <div class="font-lexend lg:pl-10 my-10 lg:mr-24 mx-10">
     <div>
         <Image
-            src={images[projectImage]()}
+            src={projectImage}
             alt=`${title} image`
             width="500"
             height="300"
@@ -96,7 +79,7 @@ const techImages = technologies.map((tech) => {
             technologies.map((tech, index) => (
                 <div class="flex items-center justify-center mb-2 lg:mb-0">
                     <Image
-                        src={techImages[index]()}
+                        src={tech.logo}
                         alt={`${tech.name} Logo`}
                         width={tech.width}
                         height={tech.height}

@@ -1,14 +1,10 @@
 ---
-import AboutPhoto from "../assets/crystal-bnw.png";
+import "../styles/global.css";
 import about from "../data/about.json";
 import ListItem from "./ListItem.astro";
-import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
 const { education, experience, certifications } = about;
-const images = import.meta.glob<{ default: ImageMetadata }>(
-    "/src/assets/*.{jpeg,jpg,png,gif}",
-);
 ---
 
 <section
@@ -19,7 +15,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         class="basis-4/6 border-solid border-2 border-black dark:border-zinc-100 p-10"
     >
         <div class="flex justify-center mb-2">
-            <h2 class="text-4xl font-indie-flower font-black">About</h2>
+            <h2 class="text-4xl font-bubbles font-black">About</h2>
         </div>
 
         <p
@@ -32,7 +28,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         </p>
 
         <div id="work-experience" class="mt-10">
-            <p class="font-indie-flower font-black text-3xl pb-5">
+            <p class="font-bubbles font-black text-3xl pb-5">
                 Work Experience
             </p>
             <ul
@@ -43,7 +39,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         </div>
 
         <div id="education" class="mt-10">
-            <p class="font-indie-flower font-black text-3xl pb-5">Education</p>
+            <p class="font-bubbles font-black text-3xl pb-5">Education</p>
             <ul
                 class="font-lexend font-light text-base text-gray-950 dark:text-gray-200"
             >
@@ -54,7 +50,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
             {
                 certifications.map((item) => (
                     <Image
-                        src={images[`/src/assets/${item.image}`]()}
+                        src={item.image}
                         alt={item.alt}
                         width="80"
                         height="80"
@@ -67,7 +63,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         class="mt-4 mb-2 lg:my-0 lg:basis-2/6 border-solid border-2 border-black dark:border-zinc-100"
     >
         <img
-            src={AboutPhoto.src}
+            src="https://i.imgur.com/KmVa1xm.png"
             alt="Crystal Duran in cap and gown"
             width="200"
             height="200"
