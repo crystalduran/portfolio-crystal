@@ -1,6 +1,6 @@
 ## Personal Portfolio - Crystal Durán
 
-This is my personal portfolio, designed to showcase my work as a frontend developer. The design is minimalist and inspired by manga panels, offering a clear and stylized presentation of information. ⸜(｡˃ ᵕ ˂ )⸝♡
+This is my personal portfolio, designed to showcase my work as a developer. The design is minimalist and inspired by manga panels, offering a clear and stylized presentation of information. ⸜(｡˃ ᵕ ˂ )⸝♡
 
 ### Technologies 
 
